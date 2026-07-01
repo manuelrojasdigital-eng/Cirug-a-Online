@@ -1,0 +1,6 @@
+{
+  "name": "Cirugía Online",
+  "description": "Simulador premium de cirugías estéticas y análisis anatómico interactivo asistido por IA con registro de pacientes seguro en la nube.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

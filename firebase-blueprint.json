@@ -1,0 +1,55 @@
+{
+  "entities": {
+    "Registration": {
+      "title": "Registration",
+      "description": "Patient digital admission record for esthetic surgery simulation.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the registration."
+        },
+        "nombres": {
+          "type": "string",
+          "description": "Full name of the patient."
+        },
+        "correo": {
+          "type": "string",
+          "format": "email",
+          "description": "Contact email address."
+        },
+        "telefono": {
+          "type": "string",
+          "description": "Phone or WhatsApp number."
+        },
+        "ciudad": {
+          "type": "string",
+          "description": "City of residence."
+        },
+        "procedimiento": {
+          "type": "string",
+          "description": "Selected medical esthetic procedure."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "The ISO timestamp of the registration."
+        }
+      },
+      "required": [
+        "id",
+        "nombres",
+        "correo",
+        "telefono",
+        "procedimiento",
+        "createdAt"
+      ]
+    }
+  },
+  "firestore": {
+    "registrations/{registrationId}": {
+      "schema": "Registration",
+      "description": "Collection of patient digital registrations for clinic admission."
+    }
+  }
+}
